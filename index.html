@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+     <link rel="stylesheet" href="styles/style.css">
+     <style>
+        .fruits-container li {
+            color:blue;
+        }
+     </style>
+</head>
+<body>
+   <header>
+    <h1>Welcome to my Dom</h1>
+   </header>
+   <main>
+    <h1>My awesome Dom </h1>
+    <ul>
+        <li>forhad</li>
+        <li>Nasir</li>
+        <li>Rayhan</li>
+        <li>Tapazzul</li>
+    </ul>
+    <ul class="fruits-container">
+        <li class="fruit">Apple</li>
+        <li class="fruit">Banana</li>
+        <li class="fruit">Jackfruits</li>
+        <li class="fruit">Mango</li>
+    </ul>
+   </main>
+   <script src="js/dom.js"></script>
+   <script>
+        const liCollection = document.getElementsByTagName('li');
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        }
+        const allHeading = document.getElementsByTagName('h1')
+        for (const heading of allHeading) {
+            // console.log(heading.innerText);
+        }
+        const someLi = document.querySelectorAll('.fruits-container li');
+        for (const li of someLi) {
+            console.log(li);
+        }
+   </script>
+</body>
+</html>
